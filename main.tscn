@@ -1,0 +1,316 @@
+[gd_scene load_steps=36 format=2]
+
+[ext_resource path="res://assets/background.png" type="Texture" id=1]
+[ext_resource path="res://assets/number12.png" type="Texture" id=2]
+[ext_resource path="res://assets/Number1.png" type="Texture" id=3]
+[ext_resource path="res://Number1.gd" type="Script" id=4]
+[ext_resource path="res://assets/minutehand.png" type="Texture" id=5]
+[ext_resource path="res://hourhand.gd" type="Script" id=6]
+[ext_resource path="res://assets/hourHand.png" type="Texture" id=7]
+[ext_resource path="res://MinuteHand.gd" type="Script" id=8]
+[ext_resource path="res://main.gd" type="Script" id=9]
+[ext_resource path="res://assets/Number8.png" type="Texture" id=10]
+[ext_resource path="res://assets/Number4.png" type="Texture" id=11]
+[ext_resource path="res://assets/Number11.png" type="Texture" id=12]
+[ext_resource path="res://assets/number6.png" type="Texture" id=13]
+[ext_resource path="res://assets/Number10.png" type="Texture" id=14]
+[ext_resource path="res://assets/Number9.png" type="Texture" id=15]
+[ext_resource path="res://assets/Number2.png" type="Texture" id=16]
+[ext_resource path="res://assets/Number3.png" type="Texture" id=17]
+[ext_resource path="res://assets/Number7.png" type="Texture" id=18]
+[ext_resource path="res://assets/Number5.png" type="Texture" id=19]
+[ext_resource path="res://Number2.gd" type="Script" id=20]
+[ext_resource path="res://Number5.gd" type="Script" id=21]
+[ext_resource path="res://Number4.gd" type="Script" id=22]
+[ext_resource path="res://Number3.gd" type="Script" id=23]
+[ext_resource path="res://Number6.gd" type="Script" id=24]
+[ext_resource path="res://Number7.gd" type="Script" id=25]
+[ext_resource path="res://Number9.gd" type="Script" id=26]
+[ext_resource path="res://Number8.gd" type="Script" id=27]
+[ext_resource path="res://Number11.gd" type="Script" id=28]
+[ext_resource path="res://Number10.gd" type="Script" id=29]
+[ext_resource path="res://Number12.gd" type="Script" id=30]
+[ext_resource path="res://assets/theme.tres" type="Theme" id=31]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 48, 48 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 48, 48 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 100, 20 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 240, 100 )
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 9 )
+
+[node name="Background" type="Sprite" parent="."]
+position = Vector2( 536, 1176 )
+scale = Vector2( 0.985185, 0.994872 )
+texture = ExtResource( 1 )
+
+[node name="Number12" type="Sprite" parent="."]
+position = Vector2( 832, 312 )
+texture = ExtResource( 2 )
+script = ExtResource( 30 )
+
+[node name="Area2D" type="Area2D" parent="Number12"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Number12/Area2D"]
+shape = SubResource( 2 )
+
+[node name="Number1" type="Sprite" parent="."]
+position = Vector2( 152, 168 )
+texture = ExtResource( 3 )
+script = ExtResource( 4 )
+
+[node name="Area2D" type="Area2D" parent="Number1"]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Number1/Area2D"]
+shape = SubResource( 3 )
+
+[node name="Number2" type="Sprite" parent="."]
+position = Vector2( 280, 168 )
+texture = ExtResource( 16 )
+script = ExtResource( 20 )
+
+[node name="Area2D" type="Area2D" parent="Number2"]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Number2/Area2D"]
+shape = SubResource( 3 )
+
+[node name="Number3" type="Sprite" parent="."]
+position = Vector2( 416, 168 )
+texture = ExtResource( 17 )
+script = ExtResource( 23 )
+
+[node name="Area2D" type="Area2D" parent="Number3"]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Number3/Area2D"]
+shape = SubResource( 3 )
+
+[node name="Number4" type="Sprite" parent="."]
+position = Vector2( 552, 168 )
+texture = ExtResource( 11 )
+script = ExtResource( 22 )
+
+[node name="Area2D" type="Area2D" parent="Number4"]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Number4/Area2D"]
+shape = SubResource( 3 )
+
+[node name="Number5" type="Sprite" parent="."]
+position = Vector2( 696, 168 )
+texture = ExtResource( 19 )
+script = ExtResource( 21 )
+
+[node name="Area2D" type="Area2D" parent="Number5"]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Number5/Area2D"]
+shape = SubResource( 3 )
+
+[node name="Number6" type="Sprite" parent="."]
+position = Vector2( 840, 168 )
+texture = ExtResource( 13 )
+script = ExtResource( 24 )
+
+[node name="Area2D" type="Area2D" parent="Number6"]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Number6/Area2D"]
+shape = SubResource( 3 )
+
+[node name="Number7" type="Sprite" parent="."]
+position = Vector2( 152, 312 )
+texture = ExtResource( 18 )
+script = ExtResource( 25 )
+
+[node name="Area2D" type="Area2D" parent="Number7"]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Number7/Area2D"]
+shape = SubResource( 3 )
+
+[node name="Number8" type="Sprite" parent="."]
+position = Vector2( 280, 312 )
+texture = ExtResource( 10 )
+script = ExtResource( 27 )
+
+[node name="Area2D" type="Area2D" parent="Number8"]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Number8/Area2D"]
+shape = SubResource( 3 )
+
+[node name="Number9" type="Sprite" parent="."]
+position = Vector2( 416, 312 )
+texture = ExtResource( 15 )
+script = ExtResource( 26 )
+
+[node name="Area2D" type="Area2D" parent="Number9"]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Number9/Area2D"]
+shape = SubResource( 3 )
+
+[node name="Number10" type="Sprite" parent="."]
+position = Vector2( 560, 312 )
+texture = ExtResource( 14 )
+script = ExtResource( 29 )
+
+[node name="Area2D" type="Area2D" parent="Number10"]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Number10/Area2D"]
+shape = SubResource( 3 )
+
+[node name="Number11" type="Sprite" parent="."]
+position = Vector2( 696, 312 )
+texture = ExtResource( 12 )
+script = ExtResource( 28 )
+
+[node name="Area2D" type="Area2D" parent="Number11"]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Number11/Area2D"]
+shape = SubResource( 3 )
+
+[node name="hourhand" type="Sprite" parent="."]
+visible = false
+position = Vector2( 630, 1170 )
+scale = Vector2( 1, 2 )
+texture = ExtResource( 5 )
+script = ExtResource( 6 )
+
+[node name="Area2D" type="Area2D" parent="hourhand"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hourhand/Area2D"]
+shape = SubResource( 4 )
+
+[node name="MinuteHand" type="Sprite" parent="."]
+visible = false
+position = Vector2( 624.853, 1254.85 )
+rotation = 0.785398
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 7 )
+script = ExtResource( 8 )
+
+[node name="Area2D" type="Area2D" parent="MinuteHand"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MinuteHand/Area2D"]
+shape = SubResource( 5 )
+
+[node name="fixnumbers" type="Button" parent="."]
+margin_left = 48.0
+margin_top = 2064.0
+margin_right = 399.0
+margin_bottom = 2141.0
+theme = ExtResource( 31 )
+text = " Fix Numbers "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="sethour" type="Button" parent="."]
+visible = false
+margin_left = 48.0
+margin_top = 1904.0
+margin_right = 472.0
+margin_bottom = 1981.0
+theme = ExtResource( 31 )
+text = " Set hours hand "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="setmin" type="Button" parent="."]
+visible = false
+margin_left = 544.0
+margin_top = 1904.0
+margin_right = 1052.0
+margin_bottom = 1981.0
+theme = ExtResource( 31 )
+text = " Set minutes hand "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Done" type="Button" parent="."]
+visible = false
+margin_left = 592.0
+margin_top = 2064.0
+margin_right = 973.0
+margin_bottom = 2141.0
+theme = ExtResource( 31 )
+text = "Done"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="rand_time" type="Label" parent="."]
+margin_left = 360.0
+margin_top = 608.0
+margin_right = 722.0
+margin_bottom = 679.0
+theme = ExtResource( 31 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = " Select Time: "
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="area_entered" from="Number12/Area2D" to="Number12" method="_on_Area2D_area_entered"]
+[connection signal="area_exited" from="Number12/Area2D" to="Number12" method="_on_Area2D_area_exited"]
+[connection signal="input_event" from="Number12/Area2D" to="Number12" method="_on_Area2D_input_event"]
+[connection signal="area_entered" from="Number1/Area2D" to="Number1" method="_on_Area2D_area_entered"]
+[connection signal="area_exited" from="Number1/Area2D" to="Number1" method="_on_Area2D_area_exited"]
+[connection signal="input_event" from="Number1/Area2D" to="Number1" method="_on_Area2D_input_event"]
+[connection signal="area_entered" from="Number2/Area2D" to="Number2" method="_on_Area2D_area_entered"]
+[connection signal="area_exited" from="Number2/Area2D" to="Number2" method="_on_Area2D_area_exited"]
+[connection signal="input_event" from="Number2/Area2D" to="Number2" method="_on_Area2D_input_event"]
+[connection signal="area_entered" from="Number3/Area2D" to="Number3" method="_on_Area2D_area_entered"]
+[connection signal="area_exited" from="Number3/Area2D" to="Number3" method="_on_Area2D_area_exited"]
+[connection signal="input_event" from="Number3/Area2D" to="Number3" method="_on_Area2D_input_event"]
+[connection signal="area_entered" from="Number4/Area2D" to="Number4" method="_on_Area2D_area_entered"]
+[connection signal="area_exited" from="Number4/Area2D" to="Number4" method="_on_Area2D_area_exited"]
+[connection signal="input_event" from="Number4/Area2D" to="Number4" method="_on_Area2D_input_event"]
+[connection signal="area_entered" from="Number5/Area2D" to="Number5" method="_on_Area2D_area_entered"]
+[connection signal="area_exited" from="Number5/Area2D" to="Number5" method="_on_Area2D_area_exited"]
+[connection signal="input_event" from="Number5/Area2D" to="Number5" method="_on_Area2D_input_event"]
+[connection signal="area_entered" from="Number6/Area2D" to="Number6" method="_on_Area2D_area_entered"]
+[connection signal="area_exited" from="Number6/Area2D" to="Number6" method="_on_Area2D_area_exited"]
+[connection signal="input_event" from="Number6/Area2D" to="Number6" method="_on_Area2D_input_event"]
+[connection signal="area_entered" from="Number7/Area2D" to="Number7" method="_on_Area2D_area_entered"]
+[connection signal="area_exited" from="Number7/Area2D" to="Number7" method="_on_Area2D_area_exited"]
+[connection signal="input_event" from="Number7/Area2D" to="Number7" method="_on_Area2D_input_event"]
+[connection signal="area_entered" from="Number8/Area2D" to="Number8" method="_on_Area2D_area_entered"]
+[connection signal="area_exited" from="Number8/Area2D" to="Number8" method="_on_Area2D_area_exited"]
+[connection signal="input_event" from="Number8/Area2D" to="Number8" method="_on_Area2D_input_event"]
+[connection signal="area_entered" from="Number9/Area2D" to="Number9" method="_on_Area2D_area_entered"]
+[connection signal="area_exited" from="Number9/Area2D" to="Number9" method="_on_Area2D_area_exited"]
+[connection signal="input_event" from="Number9/Area2D" to="Number9" method="_on_Area2D_input_event"]
+[connection signal="area_entered" from="Number10/Area2D" to="Number10" method="_on_Area2D_area_entered"]
+[connection signal="area_exited" from="Number10/Area2D" to="Number10" method="_on_Area2D_area_exited"]
+[connection signal="input_event" from="Number10/Area2D" to="Number10" method="_on_Area2D_input_event"]
+[connection signal="area_entered" from="Number11/Area2D" to="Number11" method="_on_Area2D_area_entered"]
+[connection signal="area_exited" from="Number11/Area2D" to="Number11" method="_on_Area2D_area_exited"]
+[connection signal="input_event" from="Number11/Area2D" to="Number11" method="_on_Area2D_input_event"]
+[connection signal="area_entered" from="hourhand/Area2D" to="hourhand" method="_on_Area2D_area_entered"]
+[connection signal="area_exited" from="hourhand/Area2D" to="hourhand" method="_on_Area2D_area_exited"]
+[connection signal="input_event" from="hourhand/Area2D" to="hourhand" method="_on_Area2D_input_event"]
+[connection signal="area_entered" from="MinuteHand/Area2D" to="MinuteHand" method="_on_Area2D_area_entered"]
+[connection signal="area_exited" from="MinuteHand/Area2D" to="MinuteHand" method="_on_Area2D_area_exited"]
+[connection signal="input_event" from="MinuteHand/Area2D" to="MinuteHand" method="_on_Area2D_input_event"]
+[connection signal="pressed" from="fixnumbers" to="." method="_on_fixnumbers_pressed"]
+[connection signal="pressed" from="sethour" to="." method="_on_sethour_pressed"]
+[connection signal="pressed" from="setmin" to="." method="_on_setmin_pressed"]
+[connection signal="pressed" from="Done" to="." method="_on_Done_pressed"]
